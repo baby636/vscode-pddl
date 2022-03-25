@@ -970,7 +970,9 @@
     "pretest": "npm run compile",
     "test:unit": "mocha -- out/test/**/*Test.js",
     "test:integration": "node ./out/test/runVsTests.js",
-    "test": "npm run test:unit && npm run test:integration"
+    "test": "npm run test:unit && npm run test:integration",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "ai-planning-val": "^2.3.1",
@@ -987,7 +989,8 @@
     "vscode-debugadapter": "1.38.0",
     "vscode-debugprotocol": "1.38.0",
     "vscode-extension-telemetry-wrapper": "^0.5.0",
-    "vscode-uri": "^2.1.1"
+    "vscode-uri": "^2.1.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@types/adm-zip": "^0.4.32",
@@ -1019,5 +1022,6 @@
     "vsce": "^1.80.0",
     "vscode-codicons": "0.0.12",
     "vscode-test": "^1.0.0"
-  }
+  },
+  "snyk": true
 }
