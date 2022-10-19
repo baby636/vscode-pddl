@@ -1013,7 +1013,7 @@
     "eslint": "^6.8.0",
     "glob": "^7.1.6",
     "minimist": ">=0.2.1",
-    "mocha": "^8.2.0",
+    "mocha": "^9.2.2",
     "tmp-promise": "^2.0.2",
     "typescript": "^4.0.5",
     "vsce": "^1.80.0",
